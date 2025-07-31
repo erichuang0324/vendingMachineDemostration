@@ -1,0 +1,73 @@
+body{
+    background-color: whitesmoke;
+    font-family: sans-serif;
+}
+#container{
+    display: flex;
+    align-items: flex-start;
+    gap: 32px;
+    max-width: 700px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.07);
+    min-height: 320px;
+    padding: 30px;
+}
+.sidebar{
+    width: 180px;
+    padding: 16px;
+    background: #f9fafb;
+    border-radius: 10px;
+    border: 1.5px solid #eee;
+    min-height: 220px;
+}
+.item{
+    margin: 12px 0px;
+    padding: 12px;
+    background: #e0f7fa;
+    border: 1.5px solid #64b5f6;
+    border-radius: 7px;
+    box-shadow: 0 2px 5px rgba(60,90,120,0.05);
+    font-size: 1.1rem;
+    user-select: none;
+    cursor: grab;
+}
+.item:active{
+    background: #b3e5fc;
+    box-shadow: 0 4px 16px rgba(76,175,80,0.07);
+    cursor: grabbing;
+}
+.wish-box {
+    flex: 1;
+    padding: 18px;
+    margin-right: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-height: 220px;
+
+    background: #fff3e0;
+    border: 2px dashed #ffa726;
+    border-radius: 10px;
+}
+.wish-box:hover{
+    background: #ffe0b2;
+    border-color: #ff9800;
+}
+#submit-ALL {
+    align-self: flex-end;
+    margin-top: 8px;
+    padding: 10px 30px;
+    background: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(44, 187, 99, 0.09);
+    transition: background 0.2s;
+}
+#submit-ALL:hover {
+    background: #388e3c;
+}
